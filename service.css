@@ -1,115 +1,23 @@
 /* Service Detail Page */
 
-.social__link--wa {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #25D366;
-    color: white !important;
-    border-radius: 12px;
-}
-
-.social__link--tg {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #0088cc;
-    color: white !important;
-    border-radius: 12px;
-}
-
-.service-hero {
-    padding: 80px 0 100px;
-    background: #FFFFFF;
-}
-
-.service-hero__inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.service-hero__title {
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: 700;
-    color: #1F2937;
-    margin-bottom: 24px;
-}
-
-.service-hero__features {
+.hero__features {
     list-style: none;
     margin-bottom: 32px;
 }
 
-.service-hero__features li {
+.hero__features li {
     position: relative;
     padding-left: 24px;
     margin-bottom: 12px;
     color: #4B5563;
 }
 
-.service-hero__features li::before {
+.hero__features li::before {
     content: '✓';
     position: absolute;
     left: 0;
     color: #10B981;
     font-weight: 700;
-}
-
-.service-hero__cta {
-    margin-bottom: 40px;
-}
-
-.service-hero__how {
-    padding: 24px;
-    background: #F8F9FB;
-    border-radius: 12px;
-}
-
-.service-hero__how-title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #1F2937;
-    margin-bottom: 12px;
-}
-
-.service-hero__how-list {
-    list-style: none;
-}
-
-.service-hero__how-list li {
-    margin-bottom: 8px;
-}
-
-.service-hero__how-list a {
-    color: #3B82F6;
-    transition: color 0.2s;
-}
-
-.service-hero__how-list a:hover {
-    color: #2563EB;
-}
-
-.service-hero__visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.service-hero__illustration {
-    width: 100%;
-    max-width: 420px;
-    animation: hero-float 4s ease-in-out infinite;
-}
-
-.service-hero__illustration svg {
-    width: 100%;
-    height: auto;
 }
 
 .service-content {
