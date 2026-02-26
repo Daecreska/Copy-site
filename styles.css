@@ -292,9 +292,9 @@ img {
 
 .hero__contact {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 0.95rem;
+    align-items: center; /* Центрируем телефон относительно столбика */
+    gap: 15px;           /* Отступ между телефоном и разделителем */
+    font-size: 1rem;
     color: #6B7280;
 }
 
@@ -319,7 +319,7 @@ img {
 
 .hero__illustration {
     width: 100%;
-    max-width: 520px;
+    max-width: 620px;
     animation: hero-float 4s ease-in-out infinite;
 }
 
@@ -1001,8 +1001,29 @@ img {
     }
 
     .hero__contact {
-        justify-content: center;
+        display: flex;
+    align-items: center;
     }
+
+   .hero__socials-col {
+    display: flex;
+    flex-direction: column; /* Элементы друг под другом */
+    gap: 6px;               /* Расстояние между WA и TG */
+    margin-left: 5px;       /* Небольшой отступ от черты | */
+    text-align: left;
+}
+
+.hero__contact-link--wa {
+    color: #25D366; /* Зеленый цвет */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
 
     .hero__visual {
         order: -1;
@@ -1053,10 +1074,86 @@ img {
     }
 
     .hero__contact {
-        flex-direction: column;
-    }
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 16px; /* Отступ между телефоном и разделителем */
+}
 
     .hero__contact-divider {
         display: none;
+    }
+}
+.hero__phone {
+    font-size: 17px !important; /* Чуть крупнее для читаемости */
+    font-weight: 700 !important;
+    color: #3B82F6 !important; /* Синий цвет бренда */
+    white-space: nowrap !important; /* Запрещает перенос цифр */
+    text-decoration: none !important;
+}
+
+/* Разделитель (вертикальная черта) */
+.hero__contact-divider {
+    display: block;
+    width: 1px;
+    height: 36px; /* Высота разделителя */
+    background-color: #E5E7EB; /* Светло-серый цвет */
+}
+
+/* Колонка с мессенджерами */
+.hero__socials-col {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+}
+
+/* Общий стиль ссылок мессенджеров */
+.hero__messenger-link {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important; /* Текст в одну строку */
+    text-decoration: none !important;
+    line-height: 1 !important;
+    transition: opacity 0.2s ease;
+}
+
+.hero__messenger-link:hover {
+    opacity: 0.8;
+}
+
+/* WhatsApp (Зеленый) */
+.hero__messenger-link--wa {
+    color: #25D366 !important;
+}
+
+/* Telegram (Голубой) */
+.hero__messenger-link--tg {
+    color: #29B6F6 !important;
+}
+
+/* Выравнивание иконок */
+.hero__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Адаптив для мобильных (складываем в столбик) */
+@media (max-width: 600px) {
+    .hero__contact {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px;
+    }
+    
+    .hero__contact-divider {
+        display: none !important; /* Скрываем палочку на телефоне */
+    }
+    
+    .hero__socials-col {
+        align-items: center !important;
     }
 }
