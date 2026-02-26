@@ -3,68 +3,10 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    initCustomCursor();
     initScrollAnimations();
     initMobileNav();
     initSmoothScroll();
 });
-
-/**
- * Custom Cursor - Circle that follows mouse, scales on hover over clickables
- */
-function initCustomCursor() {
-    const cursor = document.getElementById('cursor');
-    const cursorFollower = document.getElementById('cursorFollower');
-
-    if (!cursor || !cursorFollower) return;
-
-    // Hide on touch devices and small screens
-    const isTouchOrSmall = () => window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window;
-
-    if (isTouchOrSmall()) {
-        document.body.classList.add('no-custom-cursor');
-        return;
-    }
-
-    let mouseX = 0;
-    let mouseY = 0;
-    let followerX = 0;
-    let followerY = 0;
-
-    const clickables = document.querySelectorAll('a, button, .service-card, .advantage-item, .testimonial-card, .blog-card, .btn');
-
-    // Update cursor position
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    });
-
-    // Hover detection for clickable elements
-    clickables.forEach((el) => {
-        el.addEventListener('mouseenter', () => {
-            cursor.classList.add('hover');
-            cursorFollower.classList.add('hover');
-        });
-        el.addEventListener('mouseleave', () => {
-            cursor.classList.remove('hover');
-            cursorFollower.classList.remove('hover');
-        });
-    });
-
-    // Smooth cursor animation using requestAnimationFrame
-    function animateCursor() {
-        cursor.style.left = mouseX + 'px';
-        cursor.style.top = mouseY + 'px';
-
-        followerX += (mouseX - followerX) * 0.15;
-        followerY += (mouseY - followerY) * 0.15;
-        cursorFollower.style.left = followerX + 'px';
-        cursorFollower.style.top = followerY + 'px';
-
-        requestAnimationFrame(animateCursor);
-    }
-    animateCursor();
-}
 
 /**
  * Scroll Animations - IntersectionObserver for fade-up and staggered effects
