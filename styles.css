@@ -88,10 +88,6 @@ img {
     object-fit: contain;
 }
 
-.logo--light .logo__img {
-    filter: brightness(0) invert(1);
-}
-
 .logo--light .logo__text {
     color: #F9FAFB;
 }
@@ -323,7 +319,7 @@ img {
 
 .hero__illustration {
     width: 100%;
-    max-width: 420px;
+    max-width: 520px;
     animation: hero-float 4s ease-in-out infinite;
 }
 
