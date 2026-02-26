@@ -363,7 +363,9 @@ img {
 }
 
 .hero__illustration--main {
-    max-width: 1000px;
+    width: 540px;
+    height: 435px;
+    max-width: none;
 }
 
 @keyframes hero-float {
@@ -373,7 +375,8 @@ img {
 
 .hero__svg {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* ============================================
@@ -1097,6 +1100,11 @@ img {
     .hero__illustration {
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    .hero__illustration--main {
+        width: 100%;
+        height: auto;
     }
 
     .services__grid {
