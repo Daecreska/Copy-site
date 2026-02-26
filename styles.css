@@ -230,7 +230,7 @@ img {
    ============================================ */
 .hero {
     position: relative;
-    padding: 100px 0 120px;
+    padding: 130px 0 170px;
     overflow: hidden;
 }
 
@@ -291,10 +291,9 @@ img {
 }
 
 .hero__contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     font-size: 0.95rem;
     color: #6B7280;
 }
@@ -310,13 +309,24 @@ img {
 }
 
 .hero__contact-phone {
-    font-weight: 700;
-    color: #1F2937;
+    font-weight: 500;
+    color: #2563EB;
     white-space: nowrap;
 }
 
 .hero__contact-phone:hover {
+    color: #1D4ED8;
+}
+
+.hero__contact-inline {
     color: #2563EB;
+    font-weight: 500;
+}
+
+.hero__contact-inline--wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .hero__contact-action {
@@ -348,8 +358,12 @@ img {
 
 .hero__illustration {
     width: 100%;
-    max-width: 620px;
+    max-width: 720px;
     animation: hero-float 4s ease-in-out infinite;
+}
+
+.hero__illustration--main {
+    max-width: 840px;
 }
 
 @keyframes hero-float {
@@ -859,11 +873,6 @@ img {
     transition: color 0.2s;
 }
 
-.footer__contact a[href^="tel:"] {
-    color: #F9FAFB;
-    font-weight: 700;
-}
-
 .footer__links a:hover,
 .footer__contact a:hover {
     color: #60A5FA;
@@ -908,14 +917,22 @@ img {
 
 .btn--footer {
     padding-inline: 24px;
-    background: #111827;
-    color: #FFFFFF;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    background: #F3F4F6;
+    color: #000000 !important;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.35);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.btn--footer span {
+    color: inherit;
 }
 
 .btn--footer:hover {
-    background: #0B1220;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    background: #E5E7EB;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.4);
 }
 
 .footer__bottom {
