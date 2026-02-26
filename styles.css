@@ -358,12 +358,12 @@ img {
 
 .hero__illustration {
     width: 100%;
-    max-width: 720px;
+    max-width: 820px;
     animation: hero-float 4s ease-in-out infinite;
 }
 
 .hero__illustration--main {
-    max-width: 840px;
+    max-width: 1000px;
 }
 
 @keyframes hero-float {
@@ -878,6 +878,22 @@ img {
     color: #60A5FA;
 }
 
+.footer-simple-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+.footer-simple-link {
+    color: #2563EB;
+    font-weight: 400;
+}
+
+.footer__contact-divider {
+    color: #9CA3AF;
+}
+
 .footer__social {
     display: flex;
     gap: 16px;
@@ -888,27 +904,35 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: #D1D5DB;
-    font-weight: 500;
+    color: #A5B4FC;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .footer-contact-icon {
-    width: 22px;
-    height: 22px;
-    border-radius: 999px;
+    width: 18px;
+    height: 18px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #22C55E;
-    color: #FFFFFF;
+    background: transparent;
+    color: inherit;
+    font-size: 16px;
 }
 
 .footer-contact-link--wa .footer-contact-icon {
-    background: #22C55E;
+    color: inherit;
 }
 
 .footer-contact-link--tg .footer-contact-icon {
-    background: #0EA5E9;
+    color: inherit;
+}
+
+/* Телефон в футере как на примере */
+.footer__contact li:first-child a {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #E5E7EB;
 }
 
 .footer__contact-btn {
@@ -919,11 +943,11 @@ img {
     padding-inline: 24px;
     background: #F3F4F6;
     color: #000000 !important;
-    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.35);
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.25);
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .btn--footer span {
