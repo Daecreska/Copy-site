@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Накрутка голосов — Онлайн голосования</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Накрутка голосов" class="logo__img">
+                <span class="logo__text">Накрутка голосов</span>
+            </a>
+            <nav class="nav">
+                <a href="#services" class="nav__link">Цены</a>
+                <a href="#services" class="nav__link">Услуги</a>
+                <a href="#news" class="nav__link">Новости</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
+            </nav>
+            <div class="header__actions">
+                <a href="#" class="btn btn--cabinet">Личный кабинет</a>
+                <div class="social">
+                    <a href="#" class="social__link" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                    </a>
+                    <a href="#" class="social__link" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__particles">
+            <span class="particle particle--1"></span>
+            <span class="particle particle--2"></span>
+            <span class="particle particle--3"></span>
+            <span class="particle particle--4"></span>
+            <span class="particle particle--5"></span>
+            <span class="particle particle--6"></span>
+        </div>
+        <div class="container hero__inner">
+            <div class="hero__content" data-animate>
+                <h1 class="hero__title">Накрутка голосов в онлайн голосованиях</h1>
+                <p class="hero__subtitle">Профессиональные услуги по увеличению голосов в любых интернет-голосованиях. Быстро, безопасно и конфиденциально. Работаем с любыми платформами и форматами голосований.</p>
+                <div class="hero__buttons">
+                    <a href="#services" class="btn btn--primary">Выбрать услугу</a>
+                    <a href="#process" class="btn btn--secondary">Как это работает?</a>
+                </div>
+                <div class="hero__contact">
+                    <a href="tel:+78005058954" class="hero__contact-link">8 (800) 505-89-54</a>
+                    <span class="hero__contact-divider">|</span>
+                    <a href="#" class="hero__contact-link">Написать в WhatsApp</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__illustration">
+                    <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__svg">
+                        <rect x="80" y="120" width="240" height="140" rx="16" fill="#F8F9FB" stroke="#E5E7EB" stroke-width="2"/>
+                        <rect x="100" y="150" width="200" height="8" rx="4" fill="#E5E7EB"/>
+                        <rect x="100" y="170" width="150" height="8" rx="4" fill="#E5E7EB"/>
+                        <rect x="100" y="190" width="180" height="8" rx="4" fill="#E5E7EB"/>
+                        <circle cx="160" cy="230" r="20" fill="#3B82F6"/>
+                        <circle cx="200" cy="230" r="20" fill="#10B981"/>
+                        <circle cx="240" cy="230" r="20" fill="#8B5CF6"/>
+                        <rect x="120" y="270" width="160" height="30" rx="8" fill="#3B82F6"/>
+                        <circle cx="60" cy="80" r="30" fill="#FECACA" opacity="0.8"/>
+                        <circle cx="340" cy="100" r="25" fill="#DBEAFE" opacity="0.8"/>
+                        <circle cx="320" cy="250" r="20" fill="#D1FAE5" opacity="0.8"/>
+                        <path d="M200 60c0-22 18-40 40-40s40 18 40 40-18 40-40 40-40-18-40-40z" fill="#3B82F6" opacity="0.3"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="pill pill--pink">Наши услуги</span>
+                <h2 class="section-title">Выберите услугу</h2>
+            </div>
+            <div class="services__grid">
+                <article class="service-card" data-animate>
+                    <div class="service-card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Накрутка с регистрацией</h3>
+                    <p class="service-card__price">от 5 руб</p>
+                    <a href="#" class="service-card__link">Подробнее <span>→</span></a>
+                </article>
+                <article class="service-card" data-animate>
+                    <div class="service-card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Без регистрации</h3>
+                    <p class="service-card__price">от 3 руб</p>
+                    <a href="#" class="service-card__link">Подробнее <span>→</span></a>
+                </article>
+                <article class="service-card" data-animate>
+                    <div class="service-card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3 class="service-card__title">ВКонтакте голоса</h3>
+                    <p class="service-card__price">от 8 руб</p>
+                    <a href="#" class="service-card__link">Подробнее <span>→</span></a>
+                </article>
+                <article class="service-card" data-animate>
+                    <div class="service-card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Instagram / TikTok</h3>
+                    <p class="service-card__price">от 10 руб</p>
+                    <a href="#" class="service-card__link">Подробнее <span>→</span></a>
+                </article>
+                <article class="service-card" data-animate>
+                    <div class="service-card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Опросы и рейтинги</h3>
+                    <p class="service-card__price">от 4 руб</p>
+                    <a href="#" class="service-card__link">Подробнее <span>→</span></a>
+                </article>
+                <article class="service-card" data-animate>
+                    <div class="service-card__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3 class="service-card__title">Корпоративные голосования</h3>
+                    <p class="service-card__price">от 15 руб</p>
+                    <a href="#" class="service-card__link">Подробнее <span>→</span></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="pill pill--pink">Наши преимущества</span>
+                <h2 class="section-title">Почему выбирают нас</h2>
+            </div>
+            <div class="advantages__grid">
+                <div class="advantage-item" data-animate>
+                    <div class="advantage-item__icon advantage-item__icon--rocket">🚀</div>
+                    <h3 class="advantage-item__title">Быстрая доставка</h3>
+                    <p class="advantage-item__desc">Начинаем выполнение заказа в течение 15 минут. Большинство голосов доставляется в течение 1-2 часов.</p>
+                </div>
+                <div class="advantage-item" data-animate>
+                    <div class="advantage-item__icon advantage-item__icon--shield">🛡️</div>
+                    <h3 class="advantage-item__title">Безопасность</h3>
+                    <p class="advantage-item__desc">Используем только качественные аккаунты. Риск бана минимален благодаря продуманной системе.</p>
+                </div>
+                <div class="advantage-item" data-animate>
+                    <div class="advantage-item__icon advantage-item__icon--star">⭐</div>
+                    <h3 class="advantage-item__title">Качество голосов</h3>
+                    <p class="advantage-item__desc">Реальные пользователи из разных регионов. Голоса проходят проверку модераторов.</p>
+                </div>
+                <div class="advantage-item" data-animate>
+                    <div class="advantage-item__icon advantage-item__icon--clock">⏱️</div>
+                    <h3 class="advantage-item__title">24/7 поддержка</h3>
+                    <p class="advantage-item__desc">Служба поддержки работает круглосуточно. Ответим на любые вопросы и поможем с заказом.</p>
+                </div>
+                <div class="advantage-item" data-animate>
+                    <div class="advantage-item__icon advantage-item__icon--chart">📊</div>
+                    <h3 class="advantage-item__title">Прозрачная статистика</h3>
+                    <p class="advantage-item__desc">Отслеживайте выполнение заказа в личном кабинете в режиме реального времени.</p>
+                </div>
+                <div class="advantage-item" data-animate>
+                    <div class="advantage-item__icon advantage-item__icon--lock">🔒</div>
+                    <h3 class="advantage-item__title">Конфиденциальность</h3>
+                    <p class="advantage-item__desc">Все данные защищены. Никогда не передаём информацию третьим лицам.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="pill pill--pink">Процесс</span>
+                <h2 class="section-title">Как мы работаем</h2>
+            </div>
+            <div class="process__wrapper">
+                <div class="process__illustration" data-animate>
+                    <div class="process__cloud"></div>
+                </div>
+                <div class="process__steps">
+                    <div class="process-step" data-animate>
+                        <div class="process-step__number">1</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Выберите услугу</h3>
+                            <p class="process-step__desc">Определитесь с типом голосования и количеством голосов, которые вам нужны.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-step__number">2</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Оформите заказ</h3>
+                            <p class="process-step__desc">Укажите ссылку на голосование и дополнительные параметры в форме заказа.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-step__number">3</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Оплатите</h3>
+                            <p class="process-step__desc">Выберите удобный способ оплаты: карта, электронные кошельки или криптовалюта.</p>
+                        </div>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-step__number">4</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Получите результат</h3>
+                            <p class="process-step__desc">Голоса начнут накручиваться. Следите за прогрессом в личном кабинете.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta" data-animate>
+        <div class="cta__shapes">
+            <div class="cta__shape cta__shape--1"></div>
+            <div class="cta__shape cta__shape--2"></div>
+            <div class="cta__shape cta__shape--3"></div>
+        </div>
+        <div class="container cta__inner">
+            <div class="cta__content">
+                <h2 class="cta__title">Нужны качественные голоса? Мы поможем!</h2>
+                <a href="#" class="btn btn--cta">Заказать сейчас</a>
+            </div>
+            <div class="cta__person"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="pill pill--pink">Отзывы</span>
+                <h2 class="section-title">Отзывы наших клиентов</h2>
+            </div>
+            <div class="testimonials__grid">
+                <article class="testimonial-card" data-animate>
+                    <div class="testimonial-card__header">
+                        <img src="https://i.pravatar.cc/80?img=1" alt="Avatar" class="testimonial-card__avatar">
+                        <div>
+                            <h4 class="testimonial-card__name">Александр К.</h4>
+                            <time class="testimonial-card__date">15.02.2025</time>
+                        </div>
+                    </div>
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">Отличный сервис! Заказал 500 голосов для конкурса, всё пришло за 2 часа. Качество на высоте, никто не заметил подвоха.</p>
+                </article>
+                <article class="testimonial-card" data-animate>
+                    <div class="testimonial-card__header">
+                        <img src="https://i.pravatar.cc/80?img=5" alt="Avatar" class="testimonial-card__avatar">
+                        <div>
+                            <h4 class="testimonial-card__name">Мария С.</h4>
+                            <time class="testimonial-card__date">12.02.2025</time>
+                        </div>
+                    </div>
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">Работаю с ними уже полгода. Всегда стабильно, быстро и недорого. Рекомендую всем, кто ведёт бизнес в соцсетях.</p>
+                </article>
+                <article class="testimonial-card" data-animate>
+                    <div class="testimonial-card__header">
+                        <img src="https://i.pravatar.cc/80?img=8" alt="Avatar" class="testimonial-card__avatar">
+                        <div>
+                            <h4 class="testimonial-card__name">Дмитрий В.</h4>
+                            <time class="testimonial-card__date">08.02.2025</time>
+                        </div>
+                    </div>
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">Победил в корпоративном голосовании благодаря этим ребятам. Оплата простая, поддержка отвечает молниеносно.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="news">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="pill pill--pink">Блог</span>
+                <h2 class="section-title">Новое в нашем блоге</h2>
+            </div>
+            <div class="blog__grid">
+                <article class="blog-card" data-animate>
+                    <div class="blog-card__image" style="background: linear-gradient(135deg, #DBEAFE 0%, #E0E7FF 100%);"></div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Как защитить голосование от накрутки</h3>
+                        <p class="blog-card__excerpt">Рассматриваем основные методы защиты и как организаторы могут выявить подозрительную активность в голосовании.</p>
+                    </div>
+                </article>
+                <article class="blog-card" data-animate>
+                    <div class="blog-card__image" style="background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%);"></div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Топ-5 платформ для онлайн-голосований</h3>
+                        <p class="blog-card__excerpt">Обзор популярных сервисов, их плюсы и минусы. Какие платформы лучше подходят для разных целей.</p>
+                    </div>
+                </article>
+                <article class="blog-card" data-animate>
+                    <div class="blog-card__image" style="background: linear-gradient(135deg, #FCE7F3 0%, #FBCFE8 100%);"></div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Накрутка vs органические голоса</h3>
+                        <p class="blog-card__excerpt">Разбираем разницу между платной накруткой и естественным привлечением голосов через маркетинг.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO / FAQ Section -->
+    <section class="seo">
+        <div class="container">
+            <div class="seo__content" data-animate>
+                <h3 class="seo__heading">Зачем нужны услуги накрутки голосов?</h3>
+                <p class="seo__text">Онлайн-голосования стали неотъемлемой частью маркетинга, HR-процессов и общественных инициатив. Победа в таком голосовании может принести существенную выгоду: призы, повышение узнаваемости бренда, статус в компании. Услуги накрутки голосов помогают участникам конкурировать на равных и достигать желаемых результатов.</p>
+                <h3 class="seo__heading">Как заказать накрутку?</h3>
+                <p class="seo__text">Процесс максимально прост: выберите нужную услугу, укажите ссылку на голосование, количество голосов и оплатите заказ удобным способом. После оплаты голоса начнут поступать в течение 15–30 минут. Вы сможете отслеживать прогресс в личном кабинете.</p>
+                <h3 class="seo__heading">Безопасно ли это?</h3>
+                <p class="seo__text">Мы используем проверенные методы и качественные аккаунты. Риск обнаружения минимален, так как голоса распределяются естественным образом. Все данные клиентов надёжно защищены и не передаются третьим лицам.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
+        <div class="container footer__inner">
+            <div class="footer__col footer__col--logo">
+                <a href="#" class="logo logo--light">
+                    <img src="assets/logo.png" alt="Накрутка голосов" class="logo__img">
+                    <span class="logo__text">Накрутка голосов</span>
+                </a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Навигация</h4>
+                <ul class="footer__links">
+                    <li><a href="#services">Цены</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Контакты</h4>
+                <ul class="footer__contact">
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a href="tel:+78005058954">8 (800) 505-89-54</a></li>
+                    <li class="footer__social">
+                        <a href="#" aria-label="Telegram">TG</a>
+                        <a href="#" aria-label="WhatsApp">WA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__copyright">© 2025 Накрутка голосов. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
