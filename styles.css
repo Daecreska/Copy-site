@@ -305,6 +305,17 @@ img {
     margin: 0 0 2px;
 }
 
+.hero__contact-phone {
+    font-weight: 700;
+    color: #1F2937;
+    margin-top: -2px;
+    margin-bottom: 6px;
+}
+
+.hero__contact-phone:hover {
+    color: #2563EB;
+}
+
 .hero__contact-action {
     display: inline-flex;
     align-items: center;
@@ -845,6 +856,11 @@ img {
     transition: color 0.2s;
 }
 
+.footer__contact a[href^="tel:"] {
+    color: #F9FAFB;
+    font-weight: 700;
+}
+
 .footer__links a:hover,
 .footer__contact a:hover {
     color: #60A5FA;
@@ -889,6 +905,14 @@ img {
 
 .btn--footer {
     padding-inline: 24px;
+    background: #111827;
+    color: #FFFFFF;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.btn--footer:hover {
+    background: #0B1220;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .footer__bottom {
